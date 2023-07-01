@@ -26,8 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://interactive-rating-component-iksrigz.netlify.app/)
-
+- Live Site URL: [https://interactive-rating-component-iksrigz.netlify.app/]
 ### Built with
 
 - Semantic HTML5 markup
