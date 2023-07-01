@@ -1,0 +1,208 @@
+:root {
+  --Mobile: 375px;
+  --Desktop: 1440px;
+
+  --Orange: hsl(25, 97%, 53%);
+
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Dark-Blue-h: 213;
+  --Dark-Blue-s: 19%;
+  --Dark-Blue-l: 18%;
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+
+  --Font-size-paragraph: 15px;
+  --font-family: 'Overpass', sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--Font-size-paragraph);
+  color: var(--Light-Grey);
+  line-height: 1.5;
+  background-color: var(--Very-Dark-Blue);
+  min-height: 100vh;
+}
+
+main {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.rate-display {
+  display: grid;
+  gap: 1.5rem;
+  width: 90%;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 1.75rem 1.25rem;
+  border-radius: 1rem;
+  background-color: var(--Dark-Blue);
+}
+
+.star-icon {
+  --Dark-Blue-l: 21%;
+  padding: 0.75rem;
+  border-radius: 50%;
+  background-color: hsl(var(--Dark-Blue-h),
+      var(--Dark-Blue-s),
+      var(--Dark-Blue-l));
+}
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: var(--font-weight-bold);
+  color: var(--White);
+}
+
+.main-text {
+  font-size: 0.9rem;
+}
+
+.rating-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonRating {
+  --Dark-Blue-l: 21%;
+  cursor: pointer;
+  border: transparent;
+  font-weight: var(--font-weight-bold);
+  color: var(--Light-Grey);
+  padding: 0.75rem 1rem;
+  border-radius: 50%;
+  background-color: hsl(var(--Dark-Blue-h),
+      var(--Dark-Blue-s),
+      var(--Dark-Blue-l));
+  transition: background-color 250ms ease-out,
+    color 250ms ease-out;
+}
+
+.buttonRating:hover {
+  color: var(--White);
+  background-color: var(--Orange);
+}
+
+.submit-button {
+  cursor: pointer;
+  border: transparent;
+  font-size: 0.8125rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: var(--font-weight-bold);
+  color: var(--White);
+  background-color: var(--Orange);
+  padding: 0.8125rem;
+  border-radius: 2rem;
+  transition: background-color 250ms ease-out,
+    color 250ms ease-out;
+}
+
+.submit-button:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+}
+
+.post-rate-display {
+  display: grid;
+  gap: 1.25rem;
+  width: 90%;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+  border-radius: 1rem;
+  background-color: var(--Dark-Blue);
+  text-align: center;
+}
+
+.phone-img {
+  place-self: center;
+}
+
+.rating-area {
+  --Dark-Blue-l: 22%;
+  background-color: hsl(var(--Dark-Blue-h),
+      var(--Dark-Blue-s),
+      var(--Dark-Blue-l));
+  color: var(--Orange);
+  font-weight: var(--font-weight-regular);
+  place-self: center;
+  padding-inline: 0.8rem;
+  padding-block: 0.4rem 0.2rem;
+  border-radius: 1rem;
+}
+
+h2 {
+  line-height: 1;
+  color: var(--White);
+}
+
+/*media quaries*/
+
+@media(min-width: 400px) {
+  .rate-display {
+    padding: 2rem 1.25rem;
+  }
+
+  .star-icon {
+    padding: 0.9125rem;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .buttonRating {
+    font-size: 1rem;
+    padding: 1rem 1.25rem;
+  }
+
+  .submit-button {
+    padding: 1rem;
+  }
+
+  .post-rate-display {
+    padding: 3rem 2rem;
+    border-radius: 1.5rem;
+  }
+
+  .phone-img {
+    margin-bottom: 1rem;
+  }
+
+  .rating-area {
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+}
+
+/*Java Script utility classess*/
+
+.hide {
+  display: none;
+}
+
+.active {
+  color: white;
+  background-color: var(--Light-Grey);
+}

@@ -1,49 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- Rating state start -->
+  <main>
+    <div class="wrapper">
+      <div class="rate-display">
+        <img src="images/icon-star.svg" alt="image of orange star" class="star-icon">
+        <h1>How did we do?</h1>
+        <p class="main-text">
+          Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!
+        </p>
+        <div class="rating-buttons">
+          <button id="buttonRating1" class="buttonRating">1</button>
+          <button id="buttonRating2" class="buttonRating">2</button>
+          <button id="buttonRating3" class="buttonRating">3</button>
+          <button id="buttonRating4" class="buttonRating">4</button>
+          <button id="buttonRating5" class="buttonRating">5</button>
+        </div>
+        <button class="submit-button">Submit</button>
+      </div>
 
-  How did we do?
+      <div class="post-rate-display hide">
+        <img src="images/illustration-thank-you.svg" alt="image of phone suronded by orange card and coin"
+          class="phone-img">
+        <p class="rating-area">You selected <span class="selected-rating"></span> out of 5</p>
+        <h2>Thank you!</h2>
+        <p class="main-text">
+          We appreciate you taking the time to give a rating. If you ever need more support,
+          don’t hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+  </main>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
 
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="script.js"></script>
 </body>
+
 </html>
