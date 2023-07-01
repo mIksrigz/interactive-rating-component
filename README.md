@@ -7,8 +7,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 - [The challenge](#the-challenge)
 - [Screenshot](#screenshot)
 - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
+- [Built with](#built-with)
 - [Author](#author)
 
 ### The challenge
@@ -27,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://interactive-rating-component-iksrigz.netlify.app/)
 
 ### Built with
 
@@ -40,5 +39,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [mIksrigz](https://github.com/mIksrigz)
+- Frontend Mentor - [@mIksrigz](https://www.frontendmentor.io/profile/mIksrigz)
