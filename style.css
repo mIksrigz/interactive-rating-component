@@ -206,3 +206,19 @@ h2 {
   color: white;
   background-color: var(--Light-Grey);
 }
+
+/* attribution */
+
+.attribution{
+  position: absolute;
+  left: 50px;
+  bottom: 20px;
+  font-size: 0.8125rem;
+}
+.attribution a{
+  color: darkgray;
+  transition: color 250ms ease-out;
+}
+.attribution a:hover{
+  color: gray;
+}

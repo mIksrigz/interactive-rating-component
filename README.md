@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: 
+- Solution URL: https://www.frontendmentor.io/solutions/responsiveinteractiveratingcomponent-WpNRaMoDrU
 - Live Site URL: https://interactive-rating-component-iksrigz.netlify.app/
 ### Built with
 
